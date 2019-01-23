@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scene/Object.tscn" type="PackedScene" id=1]
+
+[node name="Game1" type="Node2D"]
+
+[node name="Objects" type="Node2D" parent="."]
+
+[node name="ActorAdd" parent="Objects" instance=ExtResource( 1 )]
+position = Vector2( 196.839, 162.137 )
+number = 1
+
+[node name="ActorAdd2" parent="Objects" instance=ExtResource( 1 )]
+position = Vector2( 366.741, 405.264 )
+number = 2
+
+[node name="ActorAdd3" parent="Objects" instance=ExtResource( 1 )]
+position = Vector2( 635.612, 188.786 )
+number = 3
+
