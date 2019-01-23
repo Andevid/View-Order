@@ -8,4 +8,5 @@ Control - Desktop:
 
 Build with Godot Engine 3.1 alpha4
 
-![alt tag](https://github.com/Andevid/View-Order/blob/master/image/scene_view.png)# View-Order
+![alt tag](https://github.com/Andevid/View-Order/blob/master/image/scene_view.png)
+
