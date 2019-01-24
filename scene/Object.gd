@@ -12,9 +12,12 @@ func setNumber(num):
 	
 	
 func _input_event(viewport, event, shape_idx):
-	if (event is InputEventMouseButton && event.is_pressed() && not main.is_first_selected):
-		raise()
-		main.is_first_selected = true
+	if (event is InputEventMouseButton && event.is_pressed()):
+		if get_tree().is_input_handled():
+			return
+		
+		get_tree().set_input_as_handled()
+		#raise()
 		set_process(true)
 		set_process_input(true)
 		
@@ -23,7 +26,6 @@ func _input_event(viewport, event, shape_idx):
 
 func _input(event):
 	if (event is InputEventMouseButton && not event.is_pressed()):
-		main.is_first_selected = false
 		set_process(false)
 		set_process_input(false)
 		
